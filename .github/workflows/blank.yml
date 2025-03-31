@@ -1,0 +1,29 @@
+# This is a basic workflow to help you get started with Actions
+
+name: sound.efx
+from cryptography.fernet import Fernet
+
+# Generate a key for encryption
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+
+# Encrypt a sound file
+with open('sound.wav', 'rb') as file:
+    sound_data = file.read()
+    encrypted_sound = cipher_suite.encrypt(sound_data)
+
+# Save the encrypted sound file
+with open('encrypted_sound.wav', 'wb') as file:
+    file.write(encrypted_sound)
+
+# Decrypt the sound file
+with open('encrypted_sound.wav', 'rb') as file:
+    encrypted_sound_data = file.read()
+    decrypted_sound = cipher_suite.decrypt(encrypted_sound_data)
+
+# Save the decrypted sound file
+with open('decrypted_sound.wav', 'wb') as file:
+    file.write(decrypted_sound)
+
+          echo Add other actions to build,
+          echo test, and deploy your project.
