@@ -1,3 +1,2 @@
-This is for EXPERMENTING PURPOSES ONLY!
-To distrubute when the time is right, this is still in BETA phase
-anyone who rips me off: ENGLISH OR SPANISH!
+Under the #lorestrong™ and its sister tag #LORESTRONG™, this will not be used without crediting me, rif-Tuging-Dreams, and if so, please ask before taking my api or source code, thank you.
+#LORESTRONG™
